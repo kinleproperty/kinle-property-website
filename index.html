@@ -29,35 +29,55 @@ header {
       color: #E63946; /* লাল রং */
       text-decoration: none;
     }
-    
-/* Menu bar styles */
+
+    /* মেনু বারের জন্য সাধারণ স্টাইল */
 .nav-menu {
   display: flex;
-  gap: 20px;
+  justify-content: flex-end; /* মেনু বার ডানে রাখবে */
+  gap: 30px;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
+/* মেনু লিঙ্ক স্টাইল */
 .nav-menu a {
   text-decoration: none;
-  color: #333; /* কালো, কিন্তু খুব গা dark না */
-  font-size: 16px;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
+/* হোভার করলে লিঙ্কের রঙ এবং ব্যাকগ্রাউন্ড পরিবর্তন হবে */
 .nav-menu a:hover {
-  color: #FF5733; /* হোভার করার পর লালচে রঙ */
+  color: #fff;
+  background-color: #FF5733; /* উজ্জ্বল লাল */
+  transform: translateY(-3px); /* হালকা উত্তোলন */
+}
+
+/* সক্রিয় অবস্থায় মেনু */
+.nav-menu a.active {
+  color: #fff;
+  background-color: #FF5733;
+}
+
+/* রেসপনসিভ ডিজাইন - ছোট স্ক্রীনের জন্য */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-menu a {
+    padding: 10px 20px;
+  }
 }
     
-    /* Footer Styles */
-    footer {
-      background-color: #F1F1F1;
-      padding: 20px;
-      text-align: center;
-      color: #555;
-      margin-top: 20px;
-      border-top: 1px solid #E0E0E0;
-    }
-
     footer p {
       margin: 5px 0;
     }
