@@ -29,25 +29,24 @@ header {
       color: #E63946; /* লাল রং */
       text-decoration: none;
     }
+    
+/* Menu bar styles */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
 
-    .nav-menu {
-      display: flex;
-      gap: 20px;
-    }
+.nav-menu a {
+  text-decoration: none;
+  color: #333; /* কালো, কিন্তু খুব গা dark না */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
-    .nav-menu a {
-      text-decoration: none;
-      color: #E63946;
-      font-weight: bold;
-      transition: color 0.3s, border-bottom 0.3s;
-      padding-bottom: 2px;
-    }
-
-    .nav-menu a:hover {
-      color: #1D3557; /* গাঢ় নীল রং */
-      border-bottom: 2px solid #E63946;
-    }
-
+.nav-menu a:hover {
+  color: #FF5733; /* হোভার করার পর লালচে রঙ */
+}
     /* Footer Styles */
     footer {
       background-color: #F1F1F1;
