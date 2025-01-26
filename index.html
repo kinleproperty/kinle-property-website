@@ -4,25 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kinle Property</title>
-<link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #E63946; /* লাল রং */
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #E63946;
+      font-weight: bold;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 2px;
+    }
+
+    .nav-menu a:hover {
+      color: #1D3557; /* গাঢ় নীল রং */
+      border-bottom: 2px solid #E63946;
+    }
+
+    /* Responsive Menu */
+    @media (max-width: 768px) {
+      .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Kinle Property</h1>
-    <p>Your one-stop destination for finding your dream property!</p>
+    <a href="#" class="logo">KinleProperty</a>
+    <nav class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#properties">Properties</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Properties</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
+
   <main>
-    <h2>Welcome!</h2>
-    <p>Explore our latest properties and find your perfect match.</p>
+    <section id="home">
+      <h1>Welcome to KinleProperty!</h1>
+    </section>
   </main>
-  <footer>
-    <p>© 2025 Kinle Property. All rights reserved.</p>
-  </footer>
 </body>
 </html>
