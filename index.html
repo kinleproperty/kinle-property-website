@@ -30,35 +30,24 @@
       text-decoration: none;
     }
 
-    /* Navigation Menu */
-    nav {
-      background-color: #fff;  /* মেনুর ব্যাকগ্রাউন্ড সাদা */
-      padding: 10px 20px;
-    }
-
-    nav ul {
-      list-style: none;
+    /* Menu bar styles */
+    .nav-menu {
       display: flex;
-      justify-content: flex-end; /* মেনু বার ডানে হবে */
+      gap: 20px;
     }
 
-    nav ul li {
-      margin-left: 20px;
-    }
-
-    nav ul li a {
+     .nav-menu a {
       text-decoration: none;
-      font-size: 18px;
-      color: #333;  /* কালো রঙের টেক্সট */
-      padding: 8px;
-      transition: color 0.3s ease, background-color 0.3s ease;
-    }
+      color: #333; /* কালো, কিন্তু খুব গা dark না */
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+        }
 
-    nav ul li a:hover {
-      color: #fff;  /* হোভার করলে সাদা টেক্সট */
-      background-color: #e74c3c;  /* হোভার করলে লাল ব্যাকগ্রাউন্ড */
+    .nav-menu a:hover {
+      color: #FF5733; /* হোভার করার পর লালচে রঙ */
     }
-
+    
     /* Footer Styles */
     footer {
       background-color: #F1F1F1;
